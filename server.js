@@ -23,10 +23,14 @@ if (!fs.existsSync('uploads')) {
 }
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/shopkeeper_db', {
+mongoose.connect('mongodb+srv://ajitkumarpalecb:9099104534@cluster0.weltffc.mongodb.net/shopkeeper_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+/* mongoose.connect('mongodb://localhost:27017/shopkeeper_db', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}); */
 
 // User Schema (Shopkeeper)
 const userSchema = new mongoose.Schema({
